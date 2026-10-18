@@ -1235,8 +1235,23 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
+
+footer .credit {
+  flex-basis: 100%;
+  text-align: center;
+  direction: ltr;
+  font-size: 12.5px;
+}
+footer .credit a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rline);
+  transition: color .2s var(--ease);
+}
+footer .credit a:hover { color: var(--red); }
 
 /* =========================================
    RESPONSIVE BREAKPOINTS (FIXED FOR MOBILE)
@@ -1596,6 +1611,7 @@ footer {
     <footer>
       <span>© تمامی حقوق متعلق به دلارام مطلبی است.</span>
       <span>تدوینگر، انیمیشن‌ساز و طراح گرافیک</span>
+      <span class="credit">Made with ❤️ by <a href="https://www.linkedin.com/in/mohammadreza-bonyadi" target="_blank" rel="noopener">Mohammadreza Bonyadi</a></span>
     </footer>
   </section>
 </main>
